@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    box-sizing: border-box;
+    background-color: rgb(247, 224, 151);
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid-bougie{
+    display: grid;
+    grid-template-columns: 55px 45px;
+    column-gap: 30px;
+    justify-content: center;
+    padding-top: 550px;
+    justify-items: center;
+}
+.bougie-petite{
+    position: relative;
+    margin-top: 24px;
+}
+
+.bougie-1{
+    margin-top: 12px;
+    width: 50px;
+    height: 65px;
+    background-color: rgb(230, 224, 224);
+    border: solid 2px hsla(273, 8%, 28%, 0.637);
+    border-bottom: none;
+    border-radius: 4px;
+    box-shadow: -3px 0px 3px hsla(273, 8%, 28%, 0.637) inset;
+    transform-origin:center bottom ;
+    animation: move-1 3s infinite linear;
+    
+}
+    
+@keyframes move-1{
+    0%{
+        transform:scale(1,1) ;    
+    }
+    
+    
+    73%{
+        transform: scale(1,1);
+    }
+    80%{
+        transform: scale(1.15,0.85);
+        background: #fff;
+        border-color: #673C63;
+        box-shadow: -2px 0px 0px rgba(244, 67, 54, 0.719) inset;
+    }
+    91%{
+        transform: scale(1.18,0.82);
+        background: #F44336;
+        border-color: #F44336;
+        box-shadow: -2px 0px 0px rgba(244, 67, 54, 0.719) inset;
+    }
+    92%{
+        transform: scale(0.85,1.15);
+    }
+    95%{
+        transform: scale(1.05,0.95)  
+    }
+    100%{
+        transform: scale(1, 1) ;
+    }
+
+}
+
+
+.meche-1{
+    position: absolute;
+    left: 46%;
+    top:22%;
+    width: 4px;
+    height: 17px;
+    background-color:hsla(273, 8%, 28%, 0.637);
+    margin: 0 auto;
+    animation: meche-1 3s infinite linear;
+    rotate: 0;
+    
+}
+@keyframes meche-1{
+    from,65%{
+        top: 22%;
+        rotate: 0;
+    }
+    
+    75%{
+        top:32% ;
+    }
+    91%{
+        top:37%;
+    }
+
+    to{
+        top: 22%;
+    }
+}
+
+
+.flamme{
+    width: 22px;
+    height: 29px;
+    background-image: linear-gradient(rgb(206, 193, 11),orange);
+    border-bottom-left-radius: 50% ;
+    border-bottom-right-radius: 50% ;
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+    margin: 0 auto;
+    animation: move-flamme 3s infinite linear;
+    position: relative;
+    z-index: 2;
+
+}
+@keyframes move-flamme{
+    0%, 22%, 44%{
+        transform:translateX(0) scale(1,1);
+        background-image: linear-gradient(rgb(252, 237, 24),orange);
+    }
+    7%, 31%, 52%{
+        transform:translateX(-2px) scale(0.90,1.15);
+        background-image: linear-gradient(rgb(238, 228, 82),rgb(255, 178, 36));
+    }
+    14%, 36%, 62%{
+        transform:translateX(2px) scale(1,0.85);
+        background-image: linear-gradient(rgb(255, 240, 37),rgb(255, 180, 42));
+        
+    }
+    67%{
+        background-image: none;
+    }
+    
+    100%{
+        background-image: none;
+    }
+}
+.fumee-1{
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    background-color: rgb(160, 160, 160);
+    border-radius: 5px;
+    top: 20px;
+    left: 0px;
+    animation: fumee-1 3s infinite linear;
+}
+@keyframes fumee-1{
+    0%{
+        background-color: transparent;
+    }
+    67%{
+        background-color: transparent;
+    }
+    68%{
+        background-color: rgb(160, 160, 160);
+        top: 20px;
+        left: 0px;
+    }
+    90%{
+        top: 20px;
+        left: -50px;
+    }
+    100%{
+        top: 20px;
+        left: -70px;
+        background-color: transparent; 
+    }
+}
+.fumee-2{
+    position: absolute;
+    width: 15px;
+    height: 6px;
+    background-color: rgb(117, 117, 117);
+    border-radius: 8px;
+    top: 22px;
+    left: -10px;
+    animation: fumee-2 3s infinite linear;
+}
+@keyframes fumee-2{
+    0%{
+        background-color: transparent;
+    }
+    67%{
+        background-color: transparent;
+    }
+    68%{
+        background-color: rgb(117, 117, 117);;
+        top: 22px;
+        left: -10px;
+    }
+    90%{
+        top: 22px;
+        left: -65px;
+    }
+    100%{
+        top: 22px;
+        left: -85px;
+        background-color: transparent; 
+    }
+}
+.yeux-1{
+    display: flex;
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    animation: yeux 3s infinite linear;
+}
+@keyframes yeux{
+    0%{
+        top: 45px;
+        
+    }
+    73%{
+        top: 45px;
+        
+    }
+    75%{
+        top:55px
+    }
+    100%{
+        top: 45px;
+    }
+
+
+}
+.oeil-1{
+    width: 5px;
+    height: 5px;
+    background-color: hsla(273, 8%, 28%, 0.637);
+    border-radius: 50%;
+    margin: 8px;
+    animation: oeil-1 3s infinite linear;
+}
+.oeil-2{
+    width: 5px;
+    height: 5px;
+    background-color: hsla(273, 8%, 28%, 0.637);
+    border-radius: 50%;
+    margin: 8px;
+    animation: oeil-2 3s infinite linear;
+}
+@keyframes oeil-1{
+    0%{
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        border: solid 0px transparent;
+        background-color: hsla(273, 8%, 28%, 0.637);
+    }
+    66%{
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        border: solid 0px transparent;
+        background-color: hsla(273, 8%, 28%, 0.637);
+    }
+    
+    67%{
+        background-color:transparent;
+        width: 0;
+        height: 0;
+        border: solid 0px transparent;
+
+    }
+    68%{
+        width: 5px;
+        height: 5px;
+        background-color:hsla(273, 8%, 28%, 0);
+        border-bottom: solid 2px hsla(273, 8%, 28%, 0.637);
+        border-right: solid 2px hsla(273, 8%, 28%, 0.637) ;
+        transform: rotate(-45deg);
+        border-radius: 0;
+    }
+    85%{
+        width: 5px;
+        height: 5px;
+        background-color:hsla(273, 8%, 28%, 0);
+        border-bottom: solid 2px hsla(273, 8%, 28%, 0.637);
+        border-right: solid 2px hsla(273, 8%, 28%, 0.637) ;
+        transform: rotate(-45deg);
+        border-radius: 0;
+
+    }
+    95%{
+        width: 5px;
+        height: 5px;
+        background-color:hsla(273, 8%, 28%, 0.637);
+        border-bottom: none;
+        border-right: none ;
+        border-radius: 50%;
+    }
+}
+@keyframes oeil-2{
+    0%{
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        border: solid 0px transparent;
+        background-color: hsla(273, 8%, 28%, 0.637);
+    }
+    66%{
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        border: solid 0px transparent;
+        background-color: hsla(273, 8%, 28%, 0.637);
+    }
+    
+    67%{
+        background-color:transparent;
+        width: 0;
+        height: 0;
+        border: solid 0px transparent;
+    }
+    68%{
+        width: 5px;
+        height: 5px;
+        background-color:hsla(273, 8%, 28%, 0);
+        border-bottom: solid 2px hsla(273, 8%, 28%, 0.637);
+        border-left: solid 2px hsla(273, 8%, 28%, 0.637) ;
+        transform: rotate(45deg);
+        border-radius: 0;
+    }
+    85%{
+        width: 5px;
+        height: 5px;
+        background-color:hsla(273, 8%, 28%, 0);
+        border-bottom: solid 2px hsla(273, 8%, 28%, 0.637);
+        border-left: solid 2px hsla(273, 8%, 28%, 0.637) ;
+        transform: rotate(45deg);
+        border-radius: 0;
+
+    }
+    95%{
+        width: 5px;
+        height: 5px;
+        background-color:hsla(273, 8%, 28%, 0.637);
+        border-bottom: none;
+        border-left: none ;
+        border-radius: 50%;
+    }
+}
+
+/*---------------bougie-2-----------------*/
+.bougie-grande{
+    position: relative;
+}
+
+.bougie-2{
+    
+    width: 40px;
+    height: 114px;
+    background-color: rgb(230, 224, 224);
+    border: solid 2px hsla(273, 8%, 28%, 0.637);
+    border-bottom: none;
+    border-radius: 4px;
+    box-shadow: -3px 0px 3px hsla(273, 8%, 28%, 0.637) inset;
+    margin-top: 16px;
+    transform-origin: center bottom;
+    animation: move-2 3s infinite linear ;
+}
+@keyframes move-2{
+    0%{
+        transform:scale(1,1) ;    
+    }
+    
+    65%{
+        transform: scale(0.95,1.15);
+        background: #fff;
+        box-shadow: -2px 0px 0px  hsla(273, 8%, 28%, 0.637)  inset;
+    }
+    67%{
+        transform: scale(1,1);
+    }
+    80%{
+        transform: scale(0.95,1.10);
+    }
+
+    91%{
+        transform: scale(1,1);
+        
+        
+    }
+    92%{
+        transform: scale(0.95,0.95);
+    }
+    95%{
+        transform:scale(1,1) ;
+    }
+    100%{
+        transform: scale(1, 1) ;
+    }
+
+}
+.bouche{
+    position: absolute;
+    width: 0px;
+    height: 0px ; 
+    background-color: hsla(273, 8%, 28%, 0.637) ;
+    border-radius: 50%;
+    top: 35px;
+    left: 10px;
+    animation: bouche 3s infinite linear;
+}
+@keyframes bouche{
+    0%{
+        width: 0px;
+        height: 0px ;    
+    }
+    
+    65%{
+        width: 18px;
+        height: 18px ;
+    }
+    67%{
+        width: 0px;
+        height: 0px ; 
+    }
+   
+    100%{
+        width: 0px;
+        height: 0px ; 
+    }
+
+}
+
+.yeux-2{
+    display: flex;
+    position: absolute;
+    top: 21px;
+    left: 5px;
+    animation: yeux-2 3s infinite linear;
+    
+}
+@keyframes yeux-2{
+    0%{
+        top: 21px;
+        left: 5px;
+    }
+    45%{
+        top: 10px;
+        left: 5px;
+    }
+    65%{
+        top: 10px;
+        left: 5px;
+    }
+    67%{
+        top: 21px;
+        left: 5px;
+    }
+    80%{
+        top: 17px;
+        left: 5px; 
+    }
+
+    91%{
+        top: 21px;
+        left: 5px;
+        
+        
+    }
+    92%{
+        top: 19px;
+        left: 5px; 
+    }
+    95%{
+        top: 21px;
+        left: 5px;
+    }
+    100%{
+        top: 21px;
+        left: 5px;
+    }
+}
+.oeil-3{
+    width: 5px;
+    height: 5px;
+    background-color: hsla(273, 8%, 28%, 0.637);
+    border-radius: 50%;
+    margin: 5px;
+    
+}
+.oeil-4{
+    width: 5px;
+    height: 5px;
+    background-color: hsla(273, 8%, 28%, 0.637);
+    border-radius: 50%;
+    margin: 5px;
+    
+}
+.meche-2{
+    position: absolute;
+    width: 4px;
+    height: 12px;
+    background-color:hsla(273, 8%, 28%, 0.637);
+    margin: 0 auto;
+    top: 5px;
+    left: 19px;
+    animation:meche-2 3s infinite linear;
+}
+@keyframes meche-2{
+    0%{
+        top: 5px;
+    left: 19px;   
+    }
+    
+    65%{
+        top: -9px;
+        left: 19px;
+    }
+    67%{
+        top: 5px;
+    left: 19px;
+    }
+    80%{
+        top: -2px;
+    left: 19px;
+    }
+
+    91%{
+        top: 7px;
+    left: 19px;
+        
+        
+    }
+    92%{
+        top: 8px;
+    left: 19px;
+    }
+    95%{
+        top: 5px;
+    left: 19px;
+    }
+    100%{
+        top: 5px;
+    left: 19px;
+    }
+
+}
+.table{
+    width: 500px;
+    height: 5px;
+    background-color:hsla(273, 8%, 28%, 0.637);
+    border-bottom: groove 1px rgba(128, 128, 128, 0.521);
+    border-top: groove 1px rgba(179, 179, 179, 0.521);
+    margin: 0 auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); ;
+}

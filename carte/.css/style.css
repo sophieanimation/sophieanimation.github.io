@@ -1,0 +1,606 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: rgb(248, 183, 136);
+    overflow: hidden;
+}
+
+main{
+    background-image: linear-gradient(rgb(0, 81, 255)5%,rgb(103, 206, 201));
+    height: 100vh;
+    position: relative;
+}
+.soleil{
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(rgb(255, 255, 174),yellow);
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    filter: blur(10px);
+    
+}
+
+.nuage{
+    position: relative;
+    filter: blur(2px);
+    animation: nuage 12s  ease-in ;
+    animation-delay: 0.2s;
+    
+    left: -550px;
+}
+@keyframes nuage{
+    0%{
+        top:0px; left: -550px;
+    }
+    100%{
+        top: 150px; left:1820px; rotate: 15deg;
+    }
+
+}
+.nuage-1{
+    position: absolute;
+    width: 234px;
+    height: 106px;
+    background-color: beige;
+    border-radius: 70%;
+    top:100px ;
+    left:300px ;
+}
+.nuage-2{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    background-color: beige;
+    border-radius: 70%;
+    top:90px ;
+    left:354px ;
+    
+}
+.nuage-3{
+    position: absolute;
+    width: 100px;
+    height: 83px;
+    background-color: beige;
+    border-radius: 70%;
+    top:100px ;
+    left:289px ;
+}
+.nuage-4{
+    position: absolute;
+    width: 151px;
+    height: 87px;
+    background-color: beige;
+    border-radius: 70%;
+    top:118px ;
+    left:288px ;
+}
+.nuage-5{
+    position: absolute;
+    width: 141px;
+    height: 70px;
+    background-color: beige;
+    border-radius: 70%;
+    top:148px ;
+    left:354px ;
+}
+.nuage-6{
+    position: absolute;
+    width: 117px;
+    height: 70px;
+    background-color: beige;
+    border-radius: 70%;
+    top:100px ;
+    left:421px ;
+}
+.sol{
+    width: 600px;
+    height: 50px;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 70%;
+    background-color: olivedrab;
+    position: absolute;
+    bottom: -18px;
+    left: 660px;
+   
+}
+.tige-1{
+    height: 200px;
+    width: 33px;
+    border-left: solid 5px green;
+    border-top-left-radius: 30%;
+    left: 50%;
+    bottom: 10px;
+    position: absolute;
+    rotate: 2deg;
+}
+
+
+.coeur-1{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image:radial-gradient(rgb(252, 181, 89),rgb(231, 21, 109));
+    left: 50%;
+    bottom: 215px;
+}
+    
+.petale{
+    width: 15px;
+    height: 50px;
+    background-image: linear-gradient(orange,yellow);
+    border-radius: 70%;
+
+}
+.petale-1{
+    position: absolute;
+    left: 941px;
+    bottom: 249px;
+    rotate: 8deg;
+    animation-name: example-1;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+@keyframes example-1{
+    0% {left:941px; bottom: 249px; rotate: 8deg;}
+
+    100% {left:800px; bottom: 1000px; rotate: 209deg;}
+}
+.petale-2{
+    position: absolute;
+    left:890px;
+    bottom: 212px;
+    rotate: -76deg;
+    animation-name: example-2;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+@keyframes example-2{
+    0% {left:890px; bottom: 212px; rotate: -76deg;}
+
+    100% {left:1300px; bottom: 1000px; rotate: 127deg;}
+}
+.petale-3{
+    position: absolute;
+    left: 975px;
+    bottom: 232px;
+    rotate: 53deg;
+    animation-name: example-3;
+    animation-duration: 5s;
+    animation-delay: 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+@keyframes example-3{
+    0% {left:975px; bottom: 232px; rotate: 53deg;}
+
+    100% {left:1120px; bottom: 1000px; rotate: 303deg;}
+}
+.petale-4{
+    position: absolute;
+    left:906px;
+    bottom: 240px;
+    rotate: -42deg;
+    animation-name: example-4;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+@keyframes example-4{
+    0% {left:906px; bottom: 240px; rotate: -42deg;}
+
+    100% {left:620px; bottom: 1000px; rotate: 290deg;}
+}
+.petale-5{
+    position: absolute;
+    left: 981px;
+    bottom: 200px;
+    rotate: 90deg;
+    animation-name: example-5;
+    animation-duration: 2s;
+    animation-delay: 0.7s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+
+}
+@keyframes example-5{
+    0% {left:981px; bottom: 200px; rotate: 90deg;}
+
+    100% {left:1250px; bottom: 1000px; rotate: 290deg;}
+}
+.petale-6{
+    position: absolute;
+    left: 893px;
+    bottom: 183px;
+    rotate: -113deg;
+    animation-name: example-6;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+@keyframes example-6{
+    0% {left:893px; bottom: 183px; rotate: -113deg;}
+
+    100% {left:350px; bottom: 1000px; rotate: 123deg;}
+}
+.petale-7{
+    position: absolute;
+    left: 962px;
+    bottom: 167px;
+    rotate: 143deg;
+    animation-name: example-7;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+
+}
+@keyframes example-7{
+    0% {left:962px; bottom: 167px; rotate: 143deg;}
+
+    100% {left:1300px; bottom: 1000px; rotate: 17deg;}
+}
+.tige-2{
+    height: 213px;
+    width: 20px;
+    border-left: solid 3px rgb(8, 87, 8);
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    right: 815px;
+    bottom: 22px;
+    position: absolute;
+    rotate: 20deg;
+    
+}
+.coeur-2{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image:radial-gradient(yellow,orange);
+    right: 766px;
+    bottom: 241px;
+}
+.petale-red{
+    width: 20px;
+    height: 45px;
+    background-image: linear-gradient(rgb(94, 0, 0),rgb(196, 24, 24));
+    border-radius: 70%;
+
+}
+.petale-8{
+    position: absolute;
+    right: 757px;
+    bottom: 266px;
+    rotate: 18deg;
+    animation-name: example-8;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+
+}
+@keyframes example-8{
+    0% {right:757px; bottom: 266px; rotate: 18deg;}
+
+    100% {right:1300px; bottom: 1000px; rotate: 153deg;}
+}
+.petale-9{
+    position: absolute;
+    right: 733px;
+    bottom: 241px;
+    rotate: 70deg;
+    animation-name: example-9;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+
+}
+@keyframes example-9{
+    0% {right:733px; bottom: 241px; rotate: 70deg;}
+
+    100% {right:820px; bottom: 1000px; rotate: 296deg;}
+}
+.petale-10{
+    position: absolute;
+    right: 740px;
+    bottom: 207px;
+    rotate: 123deg;
+    animation-name: example-10;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    
+
+}
+@keyframes example-10{
+    0% {right:740px; bottom: 207px; rotate: 123deg;}
+
+    100% {right:450px; bottom: 1000px; rotate: 296deg;}
+}
+.petale-11{
+    position: absolute;
+    right: 773px;
+    bottom: 192px;
+    rotate: 184deg;
+    animation-name: example-11;
+    animation-duration: 5s;
+    animation-delay: 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    
+
+}
+@keyframes example-11{
+    0% {right:773px; bottom: 192px; rotate: 184deg;}
+
+    100% {right:1500px; bottom: 1000px; rotate: 10deg;}
+}
+.petale-12{
+    position: absolute;
+    right: 806px;
+    bottom: 212px;
+    rotate: 249deg;
+    animation-name: example-12;
+    animation-duration: 4s;
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    
+
+}
+@keyframes example-12{
+    0% {right:806px; bottom: 212px; rotate: 249deg;}
+
+    100% {right:50px; bottom: 1000px; rotate: 12deg;}
+}
+.petale-13{
+    position: absolute;
+    right: 806px;
+    bottom: 242px;
+    rotate: 289deg;
+    animation-name: example-13;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+    
+@keyframes example-13{
+    0% {right:806px; bottom: 242px; rotate: 289deg;}
+
+    100% {right:1200px; bottom: 1000px; rotate: 10deg;}
+}
+.petale-14{
+    position: absolute;
+    right: 790px;
+    bottom: 264px;
+    rotate: 328deg;
+    animation-name: example-14;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    
+
+}
+@keyframes example-14{
+    0% {right:790px; bottom: 264px; rotate: 328deg;}
+
+    100% {right:950px; bottom: 1000px; rotate: 146deg;}
+}
+.tige-3{
+    height: 140px;
+    width: 20px;
+    border-right: solid 3px rgb(11, 250, 11);
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    left: 818px;
+    bottom: 12px;
+    position: absolute;
+    rotate: -20deg;
+}
+.coeur-3{
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-image:radial-gradient(rgb(196, 24, 24),rgb(94, 0, 0));
+    left: 787px;
+    bottom: 150px;
+}
+.petale-pink{
+    width: 15px;
+    height: 40px;
+    background-image: linear-gradient(rgb(231, 21, 109),rgb(252, 181, 89));
+    border-radius: 70%;
+
+}
+.petale-15{
+    position: absolute;
+    left: 760px;
+    bottom: 157px;
+    rotate: 302deg;
+    animation-name: example-15;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    
+
+}
+@keyframes example-15{
+    0% {left:760px; bottom: 157px; rotate: 302deg;}
+
+    100% {left:950px; bottom: 1000px; rotate: 146deg;}
+}
+.petale-16{
+    position: absolute;
+    left: 759px;
+    bottom: 132px;
+    rotate: 259deg;
+    animation-name: example-16;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    
+
+}
+@keyframes example-16{
+    0% {left:759px; bottom: 132px; rotate: 259deg;}
+
+    100% {left:420px; bottom: 1000px; rotate: 32deg;}
+}
+.petale-17{
+    position: absolute;
+    left: 771px;
+    bottom: 114px;
+    rotate: 216deg;
+    animation-name: example-17;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    
+
+}
+@keyframes example-17{
+    0% {left:771px; bottom: 114px; rotate: 216deg;}
+
+    100% {left:1105px; bottom: 1000px; rotate: 32deg;}
+}
+.petale-18{
+    position: absolute;
+    left: 797px;
+    bottom: 108px;
+    rotate: 172deg;
+    animation-name: example-18;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    
+}
+@keyframes example-18{
+    0% {left:797px; bottom: 108px; rotate: 172deg;}
+
+    100% {left:1300px; bottom: 1000px; rotate: 318deg;}
+}
+.petale-19{
+    position: absolute;
+    left:823px;
+    bottom: 132px;
+    rotate: 108deg;
+    animation-name: example-19;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    
+   
+
+}
+@keyframes example-19{
+    0% {left:823px; bottom: 132px; rotate: 108deg;}
+
+    100% {left:450px; bottom: 1000px; rotate: 26deg;}
+}
+.petale-20{
+    position: absolute;
+    left:822px;
+    bottom: 157px;
+    rotate: 66deg;
+    animation-name: example-20;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+   
+    
+}
+@keyframes example-20{
+    0% {left:822px; bottom: 172px; rotate: 66deg;}
+
+    100% {left:1200px; bottom: 1000px; rotate: 260deg;}
+}
+.petale-21{
+    position: absolute;
+    left:805px;
+    bottom: 172px;
+    rotate: 20deg;
+    animation-name: example-21;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+        
+}
+@keyframes example-21{
+    0% {left:805px; bottom: 172px; rotate: -17deg;}
+
+    100% {left:620px; bottom: 1000px; rotate: 172deg;}
+}
+.petale-22{
+    position: absolute;
+    left:782px;
+    bottom: 172px;
+    rotate: -17deg;
+    animation-name: example-22;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    
+}
+
+@keyframes example-22{
+    0% {left:782px; bottom: 172px; rotate: -17deg;}
+
+    100% {left:950px; bottom: 1000px; rotate: 200deg;}
+}
+
+
+h2{
+    font-size: 50px;
+    color: rgb(14, 0, 115);
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    text-shadow: 2px -2px 3px rgba(230,209,187,0.92);
+    animation: texte 12s  linear;
+}
+@keyframes texte{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    65%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
