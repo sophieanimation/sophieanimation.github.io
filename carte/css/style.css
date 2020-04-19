@@ -9,9 +9,11 @@ body{
     font-size: 30px;
     color: rgb(248, 183, 136);
     overflow: hidden;
+    width: 100vw;
+    height: 100hw;
 }
 
-main{
+.sky{
     background-image: linear-gradient(rgb(0, 81, 255)5%,rgb(103, 206, 201));
     height: 100vh;
     position: relative;
@@ -33,15 +35,15 @@ main{
     filter: blur(2px);
     animation: nuage 12s  ease-in ;
     animation-delay: 0.2s;
-    
-    left: -550px;
+    top: 5%;
+    left: -30%;
 }
 @keyframes nuage{
     0%{
-        top:0px; left: -550px;
+        
     }
     100%{
-        top: 150px; left:1820px; rotate: 15deg;
+        top: 20%; left:150%; rotate: 15deg;
     }
 
 }
@@ -100,15 +102,23 @@ main{
     top:100px ;
     left:421px ;
 }
+/*--------------------------------*/
+.flowers{
+    width: 700px;
+    height: 500px;
+    
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+}
 .sol{
     width: 600px;
-    height: 50px;
-    border-top-left-radius: 70%;
-    border-top-right-radius: 70%;
+    height: 80px;
+    border-radius: 80%;
     background-color: olivedrab;
     position: absolute;
-    bottom: -18px;
-    left: 660px;
+    bottom: -40px;
+    left: 7%;
    
 }
 .tige-1{
@@ -130,7 +140,7 @@ main{
     border-radius: 50%;
     background-image:radial-gradient(rgb(252, 181, 89),rgb(231, 21, 109));
     left: 50%;
-    bottom: 215px;
+    bottom: 44%;
 }
     
 .petale{
@@ -142,8 +152,8 @@ main{
 }
 .petale-1{
     position: absolute;
-    left: 941px;
-    bottom: 249px;
+    left: 52%;
+    bottom: 51%;
     rotate: 8deg;
     animation-name: example-1;
     animation-duration: 5s;
@@ -152,15 +162,15 @@ main{
     animation-iteration-count: 2;
 }
 @keyframes example-1{
-    0% {left:941px; bottom: 249px; rotate: 8deg;}
+    0% {}
 
-    100% {left:800px; bottom: 1000px; rotate: 209deg;}
+    100% {left:70%; bottom: 100vh; rotate: 209deg;}
 }
 .petale-2{
     position: absolute;
-    left:890px;
-    bottom: 212px;
-    rotate: -76deg;
+    left:44%;
+    bottom: 43%;
+    rotate: -82deg;
     animation-name: example-2;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -168,14 +178,14 @@ main{
     animation-iteration-count: 2;
 }
 @keyframes example-2{
-    0% {left:890px; bottom: 212px; rotate: -76deg;}
+    0% {}
 
-    100% {left:1300px; bottom: 1000px; rotate: 127deg;}
+    100% {left:20%; bottom: 100vh; rotate: 127deg;}
 }
 .petale-3{
     position: absolute;
-    left: 975px;
-    bottom: 232px;
+    left: 57%;
+    bottom: 48%;
     rotate: 53deg;
     animation-name: example-3;
     animation-duration: 5s;
@@ -184,14 +194,14 @@ main{
     animation-iteration-count: 2;
 }
 @keyframes example-3{
-    0% {left:975px; bottom: 232px; rotate: 53deg;}
+    0% {}
 
-    100% {left:1120px; bottom: 1000px; rotate: 303deg;}
+    100% {left:-35%; bottom: 100vh; rotate: 303deg;}
 }
 .petale-4{
     position: absolute;
-    left:906px;
-    bottom: 240px;
+    left:47%;
+    bottom: 49%;
     rotate: -42deg;
     animation-name: example-4;
     animation-duration: 5s;
@@ -200,14 +210,14 @@ main{
     animation-iteration-count: 2;
 }
 @keyframes example-4{
-    0% {left:906px; bottom: 240px; rotate: -42deg;}
+    0% {}
 
-    100% {left:620px; bottom: 1000px; rotate: 290deg;}
+    100% {left:80%; bottom: 100vh; rotate: 290deg;}
 }
 .petale-5{
     position: absolute;
-    left: 981px;
-    bottom: 200px;
+    left: 58%;
+    bottom: 42%;
     rotate: 90deg;
     animation-name: example-5;
     animation-duration: 2s;
@@ -217,14 +227,14 @@ main{
 
 }
 @keyframes example-5{
-    0% {left:981px; bottom: 200px; rotate: 90deg;}
+    0% {}
 
-    100% {left:1250px; bottom: 1000px; rotate: 290deg;}
+    100% {left:40%px; bottom: 100vh; rotate: 290deg;}
 }
 .petale-6{
     position: absolute;
-    left: 893px;
-    bottom: 183px;
+    left: 45%;
+    bottom: 37%;
     rotate: -113deg;
     animation-name: example-6;
     animation-duration: 3s;
@@ -233,14 +243,14 @@ main{
     animation-iteration-count: 2;
 }
 @keyframes example-6{
-    0% {left:893px; bottom: 183px; rotate: -113deg;}
+    0% {}
 
-    100% {left:350px; bottom: 1000px; rotate: 123deg;}
+    100% {left:150%; bottom: 100vh; rotate: 123deg;}
 }
 .petale-7{
     position: absolute;
-    left: 962px;
-    bottom: 167px;
+    left: 56%;
+    bottom: 34%;
     rotate: 143deg;
     animation-name: example-7;
     animation-duration: 5s;
@@ -250,9 +260,9 @@ main{
 
 }
 @keyframes example-7{
-    0% {left:962px; bottom: 167px; rotate: 143deg;}
+    0% {}
 
-    100% {left:1300px; bottom: 1000px; rotate: 17deg;}
+    100% {left:66%; bottom: 100vh; rotate: 17deg;}
 }
 .tige-2{
     height: 213px;
@@ -260,8 +270,8 @@ main{
     border-left: solid 3px rgb(8, 87, 8);
     border-top-left-radius: 30%;
     border-bottom-left-radius: 30%;
-    right: 815px;
-    bottom: 22px;
+    left: 64%;
+    bottom: 2%;
     position: absolute;
     rotate: 20deg;
     
@@ -272,8 +282,8 @@ main{
     height: 25px;
     border-radius: 50%;
     background-image:radial-gradient(yellow,orange);
-    right: 766px;
-    bottom: 241px;
+    left: 29%;
+    bottom: 32%;
 }
 .petale-red{
     width: 20px;
@@ -284,8 +294,8 @@ main{
 }
 .petale-8{
     position: absolute;
-    right: 757px;
-    bottom: 266px;
+    left: 31%;
+    bottom: 38%;
     rotate: 18deg;
     animation-name: example-8;
     animation-duration: 5s;
@@ -295,14 +305,14 @@ main{
 
 }
 @keyframes example-8{
-    0% {right:757px; bottom: 266px; rotate: 18deg;}
+    0% {}
 
-    100% {right:1300px; bottom: 1000px; rotate: 153deg;}
+    100% {left:10%; bottom: 100vh; rotate: 153deg;}
 }
 .petale-9{
     position: absolute;
-    right: 733px;
-    bottom: 241px;
+    left: 35%;
+    bottom: 33%;
     rotate: 70deg;
     animation-name: example-9;
     animation-duration: 3s;
@@ -312,14 +322,14 @@ main{
 
 }
 @keyframes example-9{
-    0% {right:733px; bottom: 241px; rotate: 70deg;}
+    0% {}
 
-    100% {right:820px; bottom: 1000px; rotate: 296deg;}
+    100% {left:120%; bottom: 100vh; rotate: 296deg;}
 }
 .petale-10{
     position: absolute;
-    right: 740px;
-    bottom: 207px;
+    left: 35%;
+    bottom: 26%;
     rotate: 123deg;
     animation-name: example-10;
     animation-duration: 5s;
@@ -330,14 +340,14 @@ main{
 
 }
 @keyframes example-10{
-    0% {right:740px; bottom: 207px; rotate: 123deg;}
+    0% {}
 
-    100% {right:450px; bottom: 1000px; rotate: 296deg;}
+    100% {left:15%; bottom: 100vh; rotate: 296deg;}
 }
 .petale-11{
     position: absolute;
-    right: 773px;
-    bottom: 192px;
+    left: 30%;
+    bottom: 22%;
     rotate: 184deg;
     animation-name: example-11;
     animation-duration: 5s;
@@ -348,15 +358,15 @@ main{
 
 }
 @keyframes example-11{
-    0% {right:773px; bottom: 192px; rotate: 184deg;}
+    0% {}
 
-    100% {right:1500px; bottom: 1000px; rotate: 10deg;}
+    100% {left:82%; bottom: 100vh; rotate: 10deg;}
 }
 .petale-12{
     position: absolute;
-    right: 806px;
-    bottom: 212px;
-    rotate: 249deg;
+    left: 25%;
+    bottom: 24%;
+    rotate: 232deg;
     animation-name: example-12;
     animation-duration: 4s;
     animation-delay: 0.2s;
@@ -366,15 +376,15 @@ main{
 
 }
 @keyframes example-12{
-    0% {right:806px; bottom: 212px; rotate: 249deg;}
+    0% {}
 
-    100% {right:50px; bottom: 1000px; rotate: 12deg;}
+    100% {left:37%; bottom: 100vh; rotate: 12deg;}
 }
 .petale-13{
     position: absolute;
-    right: 806px;
-    bottom: 242px;
-    rotate: 289deg;
+    left: 23.5%;
+    bottom: 31%;
+    rotate: 277deg;
     animation-name: example-13;
     animation-duration: 3s;
     animation-delay: 0.2s;
@@ -383,14 +393,14 @@ main{
 }
     
 @keyframes example-13{
-    0% {right:806px; bottom: 242px; rotate: 289deg;}
+    0% {}
 
-    100% {right:1200px; bottom: 1000px; rotate: 10deg;}
+    100% {left:-43%; bottom: 100vh; rotate: 10deg;}
 }
 .petale-14{
     position: absolute;
-    right: 790px;
-    bottom: 264px;
+    left: 26%;
+    bottom: 37%;
     rotate: 328deg;
     animation-name: example-14;
     animation-duration: 4s;
@@ -401,9 +411,9 @@ main{
 
 }
 @keyframes example-14{
-    0% {right:790px; bottom: 264px; rotate: 328deg;}
+    0% {}
 
-    100% {right:950px; bottom: 1000px; rotate: 146deg;}
+    100% {left:76%; bottom: 100vh; rotate: 146deg;}
 }
 .tige-3{
     height: 140px;
@@ -411,8 +421,8 @@ main{
     border-right: solid 3px rgb(11, 250, 11);
     border-top-right-radius: 30%;
     border-bottom-right-radius: 30%;
-    left: 818px;
-    bottom: 12px;
+    left: 34%;
+    bottom: 4%;
     position: absolute;
     rotate: -20deg;
 }
@@ -422,8 +432,8 @@ main{
     height: 21px;
     border-radius: 50%;
     background-image:radial-gradient(rgb(196, 24, 24),rgb(94, 0, 0));
-    left: 787px;
-    bottom: 150px;
+    left: 69%;
+    bottom: 44%;
 }
 .petale-pink{
     width: 15px;
@@ -434,8 +444,8 @@ main{
 }
 .petale-15{
     position: absolute;
-    left: 760px;
-    bottom: 157px;
+    left: 65%;
+    bottom: 46%;
     rotate: 302deg;
     animation-name: example-15;
     animation-duration: 4s;
@@ -446,15 +456,15 @@ main{
 
 }
 @keyframes example-15{
-    0% {left:760px; bottom: 157px; rotate: 302deg;}
+    0% {}
 
-    100% {left:950px; bottom: 1000px; rotate: 146deg;}
+    100% {left:5%; bottom: 100vh; rotate: 146deg;}
 }
 .petale-16{
     position: absolute;
-    left: 759px;
-    bottom: 132px;
-    rotate: 259deg;
+    left: 64%;
+    bottom: 41%;
+    rotate: 264deg;
     animation-name: example-16;
     animation-duration: 3s;
     animation-delay: 1.5s;
@@ -464,14 +474,14 @@ main{
 
 }
 @keyframes example-16{
-    0% {left:759px; bottom: 132px; rotate: 259deg;}
+    0% {}
 
-    100% {left:420px; bottom: 1000px; rotate: 32deg;}
+    100% {left:98%; bottom: 100vh; rotate: 32deg;}
 }
 .petale-17{
     position: absolute;
-    left: 771px;
-    bottom: 114px;
+    left: 66%;
+    bottom: 36%;
     rotate: 216deg;
     animation-name: example-17;
     animation-duration: 5s;
@@ -482,14 +492,14 @@ main{
 
 }
 @keyframes example-17{
-    0% {left:771px; bottom: 114px; rotate: 216deg;}
+    0% {}
 
-    100% {left:1105px; bottom: 1000px; rotate: 32deg;}
+    100% {left:23%; bottom: 100vh; rotate: 32deg;}
 }
 .petale-18{
     position: absolute;
-    left: 797px;
-    bottom: 108px;
+    left: 70%;
+    bottom: 35%;
     rotate: 172deg;
     animation-name: example-18;
     animation-duration: 5s;
@@ -499,15 +509,15 @@ main{
     
 }
 @keyframes example-18{
-    0% {left:797px; bottom: 108px; rotate: 172deg;}
+    0% {}
 
-    100% {left:1300px; bottom: 1000px; rotate: 318deg;}
+    100% {left:95%; bottom: 100vh; rotate: 318deg;}
 }
 .petale-19{
     position: absolute;
-    left:823px;
-    bottom: 132px;
-    rotate: 108deg;
+    left:74%;
+    bottom: 37%;
+    rotate: 130deg;
     animation-name: example-19;
     animation-duration: 2s;
     animation-delay: 0.3s;
@@ -518,14 +528,14 @@ main{
 
 }
 @keyframes example-19{
-    0% {left:823px; bottom: 132px; rotate: 108deg;}
+    0% {}
 
-    100% {left:450px; bottom: 1000px; rotate: 26deg;}
+    100% {left:35%; bottom: 100vh; rotate: 26deg;}
 }
 .petale-20{
     position: absolute;
-    left:822px;
-    bottom: 157px;
+    left:75%;
+    bottom: 43%;
     rotate: 66deg;
     animation-name: example-20;
     animation-duration: 3s;
@@ -536,15 +546,15 @@ main{
     
 }
 @keyframes example-20{
-    0% {left:822px; bottom: 172px; rotate: 66deg;}
+    0% {}
 
-    100% {left:1200px; bottom: 1000px; rotate: 260deg;}
+    100% {left:63%; bottom: 100vh; rotate: 260deg;}
 }
 .petale-21{
     position: absolute;
-    left:805px;
-    bottom: 172px;
-    rotate: 20deg;
+    left:72%;
+    bottom: 48%;
+    rotate: 27deg;
     animation-name: example-21;
     animation-duration: 3s;
     animation-direction: alternate;
@@ -552,14 +562,14 @@ main{
         
 }
 @keyframes example-21{
-    0% {left:805px; bottom: 172px; rotate: -17deg;}
+    0% {}
 
-    100% {left:620px; bottom: 1000px; rotate: 172deg;}
+    100% {left:48%; bottom: 100vh; rotate: 172deg;}
 }
 .petale-22{
     position: absolute;
-    left:782px;
-    bottom: 172px;
+    left:68%;
+    bottom: 49%;
     rotate: -17deg;
     animation-name: example-22;
     animation-duration: 4s;
@@ -569,9 +579,9 @@ main{
 }
 
 @keyframes example-22{
-    0% {left:782px; bottom: 172px; rotate: -17deg;}
+    0% {}
 
-    100% {left:950px; bottom: 1000px; rotate: 200deg;}
+    100% {left:-50%; bottom: 100vh; rotate: 200deg;}
 }
 
 
@@ -579,10 +589,11 @@ h2{
     font-size: 50px;
     color: rgb(14, 0, 115);
     position: absolute;
-    top: 350px;
-    left: 150px;
+    top: 25%;
+    left: 10%;
     text-shadow: 2px -2px 3px rgba(230,209,187,0.92);
     animation: texte 12s  linear;
+    z-index: 2;
 }
 @keyframes texte{
     0%{
