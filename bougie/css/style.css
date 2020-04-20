@@ -14,7 +14,7 @@ main{
     grid-template-columns: 55px 45px;
     column-gap: 30px;
     justify-content: center;
-    padding-top: 550px;
+    padding-top: 20%;
     justify-items: center;
 }
 .bougie-petite{
